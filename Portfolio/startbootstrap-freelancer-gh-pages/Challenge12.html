@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Challenge 12</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+<div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
+
+<!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="#page-top">Fraser Sprott</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li class="page-scroll">
+                    <a href="Home.html">Home</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="About.html">About Me</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="Portfolio.html">Projects</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<!-- Header -->
+<header>
+    <div class="container" id="maincontent" tabindex="-1">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-text">
+                    <h1 class="name">Coding Challenge 12</h1>
+                    <hr class="star-light">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Part 1 -->
+<section id="DOM">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Poke Move Check</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-0">
+                <select id="atkType">
+                    <option value="default" selected>--Attack Type--</option>
+                    <option value="bug">Bug</option>
+                    <option value="dark">Dark</option>
+                    <option value="dragon">Dragon</option>
+                    <option value="electric">Electric</option>
+                    <option value="fairy">Fairy</option>
+                    <option value="fighting">Fighting</option>
+                    <option value="fire">Fire</option>
+                    <option value="flying">Flying</option>
+                    <option value="ghost">Ghost</option>
+                    <option value="grass">Grass</option>
+                    <option value="ground">Ground</option>
+                    <option value="ice">Ice</option>
+                    <option value="normal">Normal</option>
+                    <option value="poison">Poison</option>
+                    <option value="psychic">Psychic</option>
+                    <option value="rock">Rock</option>
+                    <option value="steel">Steel</option>
+                    <option value="water">Water</option>
+                </select>
+            </div>
+            <div class="col-lg-4 col-lg-offset-0">
+                <select id="defType1">
+                    <option value="default" selected>--Def Type 1--</option>
+                    <option value="bug">Bug</option>
+                    <option value="dark">Dark</option>
+                    <option value="dragon">Dragon</option>
+                    <option value="electric">Electric</option>
+                    <option value="fairy">Fairy</option>
+                    <option value="fighting">Fighting</option>
+                    <option value="fire">Fire</option>
+                    <option value="flying">Flying</option>
+                    <option value="ghost">Ghost</option>
+                    <option value="grass">Grass</option>
+                    <option value="ground">Ground</option>
+                    <option value="ice">Ice</option>
+                    <option value="normal">Normal</option>
+                    <option value="poison">Poison</option>
+                    <option value="psychic">Psychic</option>
+                    <option value="rock">Rock</option>
+                    <option value="steel">Steel</option>
+                    <option value="water">Water</option>
+                </select>
+            </div>
+            <div class="col-lg-4 col-lg-offset-0">
+                <select id="defType2">
+                    <option value="None" selected>--Def Type 2--</option>
+                    <option value="None">None</option>
+                    <option value="bug">Bug</option>
+                    <option value="dark">Dark</option>
+                    <option value="dragon">Dragon</option>
+                    <option value="electric">Electric</option>
+                    <option value="fairy">Fairy</option>
+                    <option value="fighting">Fighting</option>
+                    <option value="fire">Fire</option>
+                    <option value="flying">Flying</option>
+                    <option value="ghost">Ghost</option>
+                    <option value="grass">Grass</option>
+                    <option value="ground">Ground</option>
+                    <option value="ice">Ice</option>
+                    <option value="normal">Normal</option>
+                    <option value="poison">Poison</option>
+                    <option value="psychic">Psychic</option>
+                    <option value="rock">Rock</option>
+                    <option value="steel">Steel</option>
+                    <option value="water">Water</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <button id="chekcBtn" type="button" class="btn btn-default" onclick="check(atkType.value, defType1.value, defType2.value)"> Check </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p id="damage">  </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+    <div class="footer-above">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-md-4">
+                    <h3>Contact Me</h3>
+                    <p> email <br>
+                        telephone
+                    </p>
+                </div>
+                <div class="footer-col col-md-4">
+                    <h3>Created With</h3>
+                    <p>This website was created using an open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-below">
+        <div class="container">
+            <div class="row">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+    <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+</div>
+
+<!-- jQuery -->
+<script src="vendor/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Contact Form JavaScript -->
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="js/contact_me.js"></script>
+
+<!-- Theme JavaScript -->
+<script src="js/freelancer.min.js"></script>
+
+<!-- Exercise JavaScript -->
+<script src="js/challenge12.js"></script>
+
+</body>
+
+</html>
